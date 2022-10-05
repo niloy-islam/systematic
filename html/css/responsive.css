@@ -1,0 +1,26 @@
+/* tablet layout*/
+@media screen and (min-width:200px) and (max-width:991px){
+ .social-area {max-width: 460px;}
+.inner-menu {background: none;}
+.inner-menu ::after {display: none;}
+.mean-container .mean-nav {margin-top: 0;width: 80%;}
+.inner-menu {min-height: auto;}
+.inner-main-header {padding: 20px 0;}
+.social-area {padding-top: 14px;}
+#slider-area {margin-top: 0px;}
+.inner-area h1 {font-size: 53px;}
+}
+/* monile layout*/
+@media screen and (min-width:200px) and (max-width:680px){
+.mini-menu {width: 100%;margin-bottom: 10px;}
+.mini-menu ul, .social-area ul{text-align: center;}
+.search-area, .logo-area{ float: none;width: 250px;margin: 0 auto; text-align: center;}
+.social-area ul li {margin: 0 5px;}
+.inner-area h1 {font-size: 25px;}
+.inner-area {padding-bottom: 20px;}
+#work-area ,#footer-area{padding: 20px 0;}
+.child-work {width: 98%;}
+.child-footer { width: 96%;}
+.left-copyright {width: 100%; margin-bottom: 5px;}
+.right-copyright {width: 100%;text-align: left;}
+}

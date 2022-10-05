@@ -1,0 +1,579 @@
+/*=======================================
+COMMON CSS START
+=======================================*/
+body{
+  color: #666666;
+  font-family: Georgia, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 0;
+}
+.container{
+  margin: 0 auto;
+  max-width: 960px;
+  width: 96%;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+.aligenleft{
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.aligenright{
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.aligencenter{
+  display: block;
+  margin: 0 auto 15px;
+}
+/*=======================================
+COMMON CSS END
+=======================================*/
+
+/*======================================
+TOP HEADER CSS
+======================================*/
+
+.header-area{
+  width: 100%;
+  clear: both;
+}
+
+#top-header-area{
+  background-color: #ba2e1f;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.inner-top-header{
+overflow: hidden;
+}
+
+.mini-menu{
+  padding-top: 5px;
+  float: left;
+  width: 70%;
+}
+
+.mini-menu ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.mini-menu ul li{
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+.mini-menu ul li::after{
+position: absolute;
+content: '';
+background-color: #ffffff;
+top: 7px;
+right: -7px;
+width: 1px;
+height: 12px;
+}
+
+.mini-menu ul li:last-child:after{
+display: none  ;
+  }
+
+.mini-menu ul li a{
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.mini-menu ul li a:hover{
+color: rgb(207, 202, 202);
+}
+.search-area{
+  float: right;
+  width: 30%;
+}
+
+.search-area form{
+  background-color: #ffffff;
+  max-width: 210px;
+  padding: 2%;
+  width: 94%;
+  border-radius: 25px;
+  float: right;
+}
+
+.search-area input{
+  border: 0px solid;
+  float: left;
+  width: 75%;
+  padding: 1%;
+  color: #ffffff;
+}
+
+.search-area input[type="submit"]{
+  background: url(img/search.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 23%;
+  cursor: pointer;
+}
+
+/* ====================================
+TOP HEADER CSS END
+*/
+
+/* ====================================
+MAIN HEADER CSS
+=====================================*/
+#main-header-area{
+  width: 100%;
+  clear: both;
+}
+.inner-main-header{
+  overflow: hidden;
+  padding: 40px 0;
+}
+.logo-area{
+  float: left;
+  width: 240px;
+}
+.social-area{
+  padding-top: 20px;
+  float: right;
+  max-width: 600px;
+  width: 100%;
+}
+.social-area ul{
+margin: 0;
+padding: 0;
+list-style: none;
+text-align: right;
+}
+.social-area ul li{
+display: inline-block;
+margin-left: 20px;
+}
+.social-area ul li a{
+display: block;
+text-decoration: none;
+}
+.social-area ul li a i{
+  background-color: #333333;
+  border-radius: 50%;
+  color: #ffffff;
+  width: 35px;
+  padding-top: 8px;
+  height: 25px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+.social-area ul li a:hover i{
+background-color: #ba2e1f;
+transition: 0.5s;
+}
+.social-area ul li a:hover i.fa-linkedin-in{
+  background-color: #163FC3;
+}
+.social-area ul li a:hover i.fa-twitter{
+  background-color: #2EA9DA;
+}
+.social-area ul li a:hover i.fa-google-plus-g{
+  background-color: #E33F3C;
+}
+.social-area ul li a:hover i.fa-pinterest{
+  background-color: #E83E41;
+}
+.social-area ul li a:hover i.fa-rss{
+  background-color: #ee802f;
+}
+/* ====================================
+MAIN HEADER CSS END
+=====================================*/
+/* ====================================
+NAV MENU START
+===================================== */
+#main-menu{
+  width: 100%;
+  clear: both;
+}
+.inner-menu{
+  background: #333333;
+  position: relative;
+  min-height: 30px;
+  padding: 15px 0;
+  border-radius: 5px;
+  z-index: 1;
+}
+.inner-menu ::after{
+  background: rgba(0, 0, 0, 0.118);
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+#main-menu ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+#main-menu ul li{
+  display: inline-block;
+  margin: 0 5px;
+  position: relative;
+}
+#main-menu ul li a{
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 2px;
+}
+#main-menu ul li a:hover{
+  color: #ba2e1f;
+}
+#main-menu ul li:hover a{
+  color: #ba2e1f;
+}
+#main-menu ul li:hover ul li a{
+  color: #ffffff;
+}
+/* Dropdown style */
+#main-menu ul ul{
+  position: absolute;
+  width: 180px;
+  background: #ba2e1f;
+  top: 30px;
+  left: -999999px;
+}
+#main-menu ul li:hover ul{
+  left: 0;
+}
+#main-menu ul li:hover ul ul{
+  left: -99999px;
+}
+#main-menu ul ul ul{
+  top: 0;
+  left: -99999px;
+}
+#main-menu ul li ul li:hover ul{
+  left: 180px;
+}
+#main-menu ul ul li{
+  margin: 0;
+  display: block;
+}
+#main-menu ul ul li a:hover{
+  background: #333333;
+  color: #ffffff;
+}
+#main-menu ul ul li:hover a{
+  background: #333333;
+  color: #ffffff;
+}
+#main-menu ul ul li:hover ul li  a{
+  background: none;
+  color: #ffffff;
+}
+#main-menu ul ul li ul li  a:hover{
+  background: #333333;
+  color: #ffffff;
+}
+/* ====================================
+slider css
+===================================== */
+#slider-area{
+  margin-top: 20px;
+}
+.item{
+  position: relative;
+}
+.slider-caption{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-caption h1{
+  color: #ffffff;
+  font-size: 35px;
+}
+/*======================================
+Hero CSS
+======================================*/
+#hero-area{
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.inner-area{
+  overflow: hidden;
+}
+.inner-area h1{
+color: black;
+font-size: 86px;
+line-height: 1em;
+font-weight: normal;
+margin-bottom: 15px;
+}
+.inner-area p{
+  color: #666666;
+  font: 16px;
+  font-weight: normal;
+}
+.inner-area a{
+  color: #ba2e1f;
+  float: right;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.inner-area a:hover{
+  color: #000000;
+}
+/*======================================
+work CSS
+======================================*/
+#work-area{
+  background: #f2f2f2;
+  padding: 45px 0;
+}
+.inner-work{
+  overflow: hidden;
+}
+.child-work{
+  width: 32%;
+  float: left;
+  margin: 0 1% 10px;
+}
+.child-work h2{
+color: #333333;
+font-size: 26px;
+font-weight: normal;
+}
+.child-work p{
+  color: #878787;
+  font-size: 14px;
+  font-weight: normal;
+}
+.child-work a{
+  color: #b92d1f;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  clear: both;
+  float: right;
+  display: inline-block;
+}
+.child-work a:hover{
+  color: #000000;
+}
+.about-area{
+  margin-left: 0;
+}
+.about-area img{
+  border: 1px solid #dfdfdf;
+  padding: 5px;
+  display: block;
+  margin-bottom: 15px;
+}
+.service-area{
+
+}
+.child-service{
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.child-service .sevice-image{
+  width: 25%;
+  float: left;
+}
+.child-service .service-text{
+  width: 75%;
+  float: right;
+}
+.child-service .service-text h3{
+  font-size: 14px;
+  color: #878787;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.child-service .service-text p{
+  margin-top: 0;
+  line-height: 1.4em;
+}
+.testimonial-area{
+  margin-right: 0;
+}
+.child-testimonial{
+  width: 100%;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.child-testimonial h3{
+  background-image: url(img/symbol.jpg);
+  background-repeat: no-repeat;
+  color: #989898;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 0px 15px 65px;
+}
+.child-testimonial h3 span{
+  font-weight: normal;
+}
+/*======================================
+work CSS
+======================================*/ 
+#footer-area{
+  background: #ffffff;
+  padding: 45px 0;
+}
+.inner-footer{
+  overflow: hidden;
+}
+.child-footer{
+  padding: 1%;
+  width: 21%;
+  float: left;
+  margin: 0 1% 10px;
+}
+.child-footer h3{
+  border-top: 1px solid;
+  color: #666666;
+  font-size: 17px;
+  font-weight: 100;
+  padding-top: 10px;
+}
+.child-footer p{
+  color: #666666;
+  font-size: 14px;
+  margin-top: 0;
+} 
+.child-footer p a{
+  color: #b92d1f;
+  text-decoration: none;
+} 
+.child-footer ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+} 
+.child-footer ul ul{
+  display: none;
+} 
+.child-footer li{
+  background: url(img/next.png) no-repeat center left;
+  padding-left: 18px;
+  margin: 5px 0;
+  display: block;
+  border-bottom: 1px solid #666666;
+} 
+.child-footer li:last-child{
+ border-bottom: 0;
+} 
+.child-footer li a{
+  color: #666666;
+  font-size: 14px;
+  text-decoration: none;
+} 
+.child-footer li a:hover{
+  color: #b92d1f;
+} 
+.child-footer h4{
+  color: #666666;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.child-footer h4 a{
+  color: #666666;
+  text-decoration: none;
+  float: none;
+}
+.child-footer h4 a:hover{
+  color: #b92d1f;
+} 
+.child-footer h6{
+  margin: 0 0 10px;
+  font-size: 12px;  
+  line-height: 1.3em;
+} 
+.child-blog{
+  width: 100%;
+  overflow: hidden;
+}
+.child-blog a{
+  color: #b92d1f;
+  text-decoration: none;
+  float: right;
+  font-size: 14px;
+}
+.child-footer input{
+  font-size: 13px;
+  background:#f2f2f2 ; 
+  border: 0 solid;
+  padding: 10px 2%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 96%;
+}
+.child-footer textarea{
+  background:#f2f2f2 ; 
+  border: 0 solid;
+  padding: 10px 2%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 96%;
+}
+.child-footer input[type="submit"]{
+  width: 80px;
+  color: #b92d1f;
+  cursor: pointer;
+  font-weight: lighter;
+  transition: 0.2s;
+}
+.child-footer input[type="submit"]:hover{
+  background: #b92d1f;
+  color: #ffffff;
+}
+/*======================================
+copyright area CSS
+======================================*/ 
+#copyright-area{
+  background: #f2f2f2;
+  padding: 20px 0;
+}
+.inner-copyright{
+  overflow: hidden;
+}
+.inner-copyright p{
+  margin: 0;
+  color: #919191;
+  font-size: 12px;
+}
+.left-copyright{
+  width: 60%;
+  float: left;
+}
+.right-copyright{
+  width: 40%;
+  float: right;
+  text-align: right;
+}
